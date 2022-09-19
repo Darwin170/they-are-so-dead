@@ -1,0 +1,56 @@
+public class App {
+    public static void main(String[] args) throws Exception {
+
+        // Conditional Structure
+        boolean ihaveNoGas = false;
+        boolean Holiday=true;
+        if (ihaveNoGas) {
+            System.out.println("Ask your parents for gas money");
+        }
+        else if (Holiday){
+            System.out.println("SPEND TIME WITH FAMILY");
+        
+        }
+        
+        
+        else {
+            // Step 1
+            Sleep();
+
+            // Step 2
+            PlayValo();
+
+            // Step 3
+            WatchMovie();
+
+            // Step 4
+            Eat();
+
+            // Step 5
+            CleaningHouse();
+        }
+
+    }
+
+    static void Sleep() {
+        System.out.println("SLEEPING IN MY ROOM");
+    }
+
+    static void PlayValo() {
+        System.out.println("PLAYING VALO WITH FRIENDS");
+    }
+
+    static void WatchMovie() {
+        System.out.println("WATCHING MOVIE ");
+    }
+
+    static void Eat() {
+        System.out.println("FOOD TRIP");
+      
+    }
+
+    static void CleaningHouse() {
+        System.out.println("CLEAN THE HOUSE");
+    }
+
+}
