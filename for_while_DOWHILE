@@ -1,0 +1,22 @@
+public class App {
+    public static void main(String[] args) throws Exception {
+
+        for (int i = 5; i != 0; i--) {
+            System.out.println("DARWIN");
+        }
+
+    
+    int nakooow=5;
+    while (nakooow!=0){
+        System.out.println("DENG");
+        nakooow--;
+        
+        }
+        int valooong=5;
+ do{ 
+
+     System.out.println ("UMENGAN");
+     valooong--;
+        } while(valooong != 0);
+    }
+}
