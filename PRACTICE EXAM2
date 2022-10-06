@@ -1,0 +1,98 @@
+import java.util.Scanner;
+public class App {
+    static Scanner scan = new Scanner(System.in);
+    public static void main(String[] args) throws Exception {
+      System.out.println("PRACTICE EXAM 2");
+    
+      // COVERTION OF CELSIUS TO FAHRENHEIT
+      System.out.print("ENTER THE CELSIUS:");
+      double tempInCelsius = scan.nextDouble();
+      tempInCelsius = (tempInCelsius * 9/5) + 32;
+      System.out.println("THE RESULT IS:" +tempInCelsius);
+      
+      //COVERTION OF FAHRENHEIT TO CELSIUS
+      System.out.print("ENTER THE FARENHEIT:");
+      double tempInFahrenheit = scan.nextDouble();
+      tempInFahrenheit =(tempInFahrenheit - 32) * 5/9;
+      System.out.println("THE CELSUIS IS:"+tempInFahrenheit);
+       
+      // CONVERTION SECOND TO MINUTES
+        System.out.print("ENTER THE SECOND:");
+        double second = scan.nextDouble();
+        second = second / 60;
+        System.out.println("THE MINUTES IS:" + second);
+        
+        //CONVERTION OF MINUTE TO HOURS
+        System.out.print("ENTER THE MINUTE:");
+        double minute = scan.nextDouble();
+        minute = minute / 60;
+        System.out.println("THE HOURS IS:" + minute);
+       
+        //COVERTION OF MEGABYTES TO GIGABYTES   
+        System.out.print("ENTER THE MEGABYTES:");
+        double megabytes = scan.nextDouble();
+        megabytes = megabytes / 1000;
+        System.out.println("THE GIGABYTES IS:" + megabytes);
+        // CONDITION
+        System.out.print("ENTER THE 11 digit mobile Number:");
+        String mobileNumber = scan.next();
+        mobileNumber= "";
+         if(mobileNumber.length()==11){
+            System.out.println("THE NUMBER IS 11 DIGITS");
+
+         }
+         else{
+            System.out.println("THE NUMBER IS INVALID");
+         }
+         //Bestfriend
+         System.out.print("ENTER YOUR BESTFRIEND NAME IN UPPERCASE:");
+         String bestfriend = scan.next();
+         if(bestfriend== bestfriend.toUpperCase()){
+            System.out.println("VALID");
+         }
+         else {
+            System.out.println("INVALID");
+
+         } 
+         // ANSWER SHOULD BE MANILA OR manila or Manila
+         System.out.print("ENTER THE CAPITAL OF THE PHILIPPINES:");
+         String Capital = scan.next();
+         if (Capital.toLowerCase().equals("manila")|| Capital.toUpperCase().equals("MANILA")){
+            System.out.println("VALID");
+         }
+         else{
+            System.out.println("INVALID");
+         }
+         //5 human senses 
+         System.out.print("ENTER ONE OF THE 5 HUMAN SENSES:");
+         String Senses = scan.next();
+         switch (Senses){
+            case "sight":{
+                System.out.println("VALID");
+                break;
+            } case "touch":{
+                System.out.println("VALID");
+                break;
+            }
+            case "smell":{
+                System.out.println("VALID");
+                break;
+            }
+            case "hearing":{
+                System.out.println("VALID");
+                break;
+            }
+            case "taste":{
+                System.out.println("VALID");
+                break;
+            }
+            default: {
+                System.out.println("INVALID");
+                break;
+
+            }
+            
+         }
+         
+    }
+}
